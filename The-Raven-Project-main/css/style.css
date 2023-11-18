@@ -1,0 +1,157 @@
+/* general */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.71vw;  
+  font-family: sans-serif;
+  color: #23294F;
+  list-style: none;
+}
+
+* {
+  --marg-22: 2.12vw;
+  --size-40px: 3.42vw;
+  --size-20px: 1.71vw;
+}
+
+a {
+  font-style: normal;
+  text-decoration: none;
+  display: inline-block;
+  align-items: inherit;
+}
+
+body {
+  position: relative;
+  background-color: #F1F1F1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  padding: 3.42vw;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header { 
+  display: flex;
+  flex-direction: column;
+}
+
+.header-first-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.71vw;
+}
+
+.header-link {
+  margin-right: 0.9vw;
+}
+
+.header-nav {
+  background-color: #C0C5EC;
+  padding: 1.8vw;
+  border-radius: 1.71vw;
+}
+
+.header-link-profile {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: max-content;
+}
+
+.header-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;  
+}
+
+/* main */
+
+.container-heading {
+  font-weight: normal;
+  font-size: 3.42vw;
+  margin: 0 0 1.71vw 3.45vw; 
+}
+
+/* lessons  */
+
+.lection-cards {
+  display: flex;
+  gap: 6%;
+  flex-wrap: wrap ;
+}
+
+.lection-card {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  min-width: 47%;
+  min-height: 455px;
+  border-radius: 1.71vw;
+  padding: 3.4vw;
+  padding-bottom: 2.93vw;
+}
+
+.lection-card .medium-heading {
+  color: #061682;
+}
+
+.medium-heading {
+  font-size: 3vw;
+}
+
+.card-heading {
+  font-weight: bolder;
+  font-size: 3.35vw;
+  color: #061682;
+}
+
+.lection-card1 {
+  background: #C0C5EC;
+  background-image: url('../atributes/img/athom.svg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  
+}
+
+.lection-card2 {
+  text-align: end;
+  background: url('../atributes/img/devon-rex-cat\ 1.svg') no-repeat #C6C0EC left bottom;
+}
+
+.show-more-gray {
+  width: max-content;
+  color: #AEAEAE;
+  align-self: flex-end;
+  padding-right: var(--marg-22);
+  background: url('../atributes/img/gray\ arrow.svg') no-repeat right center;
+  margin: var(--size-20px) var(--size-20px) 0 0;
+}
+
+.show-more-blue {
+  color: #091FB4;
+  background: url('../atributes/img/blue\ arrow.svg') no-repeat right center;
+  padding-right: var(--marg-22);
+}
+
+
+
+
+/* footer */
+
+/* .footer {
+  display: flex;
+  align-items: end; 
+  background-image: url('../atributes/img/Group\ 3028.svg');  
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20%;
+} */
