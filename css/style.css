@@ -87,16 +87,17 @@ body {
 
 .lection-cards {
   display: flex;
-  gap: 6%;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .lection-card {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  min-width: 47%;
-  min-height: 455px;
+  min-width: 40vw;
+  min-height: 38.89vw;
+  max-height: 39vw;
   border-radius: var(--radius);
   padding: 3.4vw;
   padding-bottom: 2.93vw;
@@ -161,7 +162,7 @@ body {
   width: 33%;
   background: #23294F;
   border-radius: var(--radius);
-  min-height: 520px;
+  min-height: 44vw;
   padding: var(--size-40px);
   padding-bottom: var(--pad-35);
 }
@@ -173,18 +174,20 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
+
 }
 
 .adv-content {
   display: flex;
   flex-wrap: wrap;
-  max-width: 670px;
-  gap: 80px 60px;
+  width: 52.56vw;
+  gap: var(--size-40px);
 }
 
 .adv-descr-card {
   display: flex;
-  max-width: 288px;
+  width: 22.5vw;
+  flex-shrink: 0;
   flex-direction: column;
   gap: var(--marg-22px);
 }
@@ -207,10 +210,10 @@ body {
 .event-card {
   display: flex;
   flex-flow: column;
-  min-width: calc(50% - var(--marg-22px));
-  min-height: 455px;
+  width: 48.72vw;
+  height: 38.89vw;
   border-radius: var(--radius);
-  padding: 3.4vw;
+  padding: var(--size-40px);
   padding-bottom: 2.93vw;
 }
 
