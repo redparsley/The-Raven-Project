@@ -10,9 +10,28 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href="#" class="header-logo">
-                <img src="../atributes/img/icon.svg" alt="Логотип Рейвен">
-            </a>
+            <div class="header-first-row">
+                <a href="#" class="header-logo">
+                    <img src="../atributes/img/icon.svg" alt="Логотип Рейвен">
+                </a>
+                <a class="header-link-profile">
+                    <span class="header-link">
+                        Войти
+                    </span>
+                    <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_101_61)">
+                        <circle cx="35" cy="35" r="35" fill="#C0C5EC"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9781 77.9968L12.0844 78L12.174 77.9873C12.5721 77.9113 14.1688 77.4458 14.1688 74.8333C14.1688 59.0918 22.5667 46.3333 32.9281 46.3333C34.3059 46.3333 35.6941 46.3333 37.0719 46.3333C47.4312 46.3333 55.8312 59.0918 55.8312 74.8333C55.8312 74.8998 55.8312 74.9632 55.8354 75.0265C55.8667 76.0557 56.1543 76.727 56.5087 77.1672C56.8797 77.6865 57.3737 78 57.9156 78C57.9156 78 60 77.8195 60 74.8333C60 55.5958 49.7344 40 37.0719 40C35.6941 40 34.3059 40 32.9281 40C20.2655 40 10 55.5958 10 74.8333C10 74.675 10.0063 74.542 10.0167 74.4312C10.0063 74.561 10 74.6972 10 74.8333C10 76.5275 10.8754 77.9113 11.9781 77.9968Z" fill="#23294F"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M34.6081 6C26.5454 6 20 12.5388 20 20.5935C20 28.6483 26.5454 35.1871 34.6081 35.1871C42.6709 35.1871 49.2163 28.6483 49.2163 20.5935C49.2163 12.5388 42.6709 6 34.6081 6ZM34.6081 11.8304C39.4493 11.8304 43.38 15.7572 43.38 20.5935C43.38 25.4299 39.4493 29.3567 34.6081 29.3567C29.767 29.3567 25.8363 25.4299 25.8363 20.5935C25.8363 15.7572 29.767 11.8304 34.6081 11.8304Z" fill="#23294F"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_101_61">
+                        <rect width="70" height="70" rx="35" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg> 
+                </a>
+            </div>
             <nav class="header-nav">
                 <ul class="header-list">
                     <li class="header-list-item">
@@ -39,31 +58,35 @@
             <div class="container">
                 <div class="lection-content">
                     <h2 class="container-heading">
-
+                        Наши курсы
                     </h2>
                 </div>
                 <ul class="lection-cards">
-                    <li class="lection-card">
+                    <li class="lection-card lection-card1">
                         <h3 class="card-heading">
-                            квантовая физика
+                            квантовая<br>физика
                         </h3>
-                        <h4 class="medium-heading">
+                        <div class="card-bottom-content">
+                            <h4 class="medium-heading">
                             вводный курс
-                        </h4>
-                        <a href="#" class="show-more-blue">
-                            подробнее
-                        </a>
+                            </h4>
+                            <a href="#" class="show-more-blue">
+                                подробнее
+                            </a>
+                        </div>
                     </li>
-                    <li class="lection-card">
+                    <li class="lection-card lection-card2">
                         <h3 class="card-heading">
-                            квантовая физика
+                            квантовая<br>физика
                         </h3>
-                        <h4 class="medium-heading">
-                            продвинутый уровень
-                        </h4>
-                        <a href="#" class="show-more-blue">
+                        <div class="card-bottom-content">
+                            <h4 class="medium-heading">
+                            продвинутый<br>уровень
+                            </h4>
+                            <a href="#" class="show-more-blue">
                             подробнее
-                        </a>
+                            </a>
+                        </div>
                     </li>
                 </ul>
                 <a href="#" class="show-more-gray">
@@ -74,6 +97,8 @@
         <section class="about-project">
             <div class="container">
                 <h2 class="container-heading">
+                    О проекте 
+                </h2>
                     <div class="about-project-cards">
                         <div class="about-project-card">
                             <p class="about-project-text">
@@ -117,12 +142,11 @@
                                 </button>
                                 <button aria-label="Слайд - 4" class="person-role-scroll-item"><span class="scroll-line"></span>
                                 </button>
-                                <button aria-label="Слайд - " class="person-role-scroll-item"><span class="scroll-line"></span>
+                                <button aria-label="Слайд - 5" class="person-role-scroll-item"><span class="scroll-line"></span>
                                 </button>
                             </div>
                         </div>
                     </div>
-                </h2>
             </div>
         </section>
         <section class="advantages">
@@ -130,7 +154,7 @@
                 <div class="adv-content">
                     <div class="adv-descr-card">
                         <h3 class="adv-heading">
-                            Абсолютно бесплатно
+                            Абсолютно<br>бесплатно
                         </h3>
                         <p class="adv-descr-text">
                             наши материалы абсолютно бесплатны для студентов КМПО и частично платны для студентов других учебных заведений 
@@ -163,8 +187,20 @@
                 </div>
             </div>
         </section>
-        <section class="events ">
-            
+        <section class="events">
+            <div class="container">
+                <h2 class="container-heading">Мероприятия</h2>
+                <div class="event-cards">
+                    <div class="event-card">
+                        <p class="notification">
+                            Следите за новостями, скоро здесь появится что-то интересное!
+                        </p>
+                    </div>
+                    <div class="event-card">
+                        
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -174,8 +210,8 @@
                     Свяжитесь с нами
                 </p>
                 <address class="footer-contacts">
-                    <a href="#" class="footer-link">raven.edu@mail.ru</a>
-                    <a href="#" class="footer-link">+7 900 000 00 00</a>
+                    <a href="mailto:" class="footer-link">raven.edu@mail.ru</a>
+                    <a href="tel:" class="footer-link">+7 900 000 00 00</a>
                 </address>
             </div>
             <div class="footer-block">
@@ -229,8 +265,7 @@
                             </g>
                             <path id="Logo" fill-rule="evenodd" clip-rule="evenodd" d="M37.5266 14.3208C37.7262 13.7064 37.5266 13.2764 36.5952 13.2764H33.4908C32.6925 13.2764 32.3377 13.6655 32.1381 14.0955C32.1381 14.0955 30.5637 17.6588 28.3241 19.9524C27.5923 20.6282 27.2819 20.833 26.8828 20.833C26.6832 20.833 26.3949 20.6282 26.3949 20.0138V14.3208C26.3949 13.5835 26.1732 13.2764 25.5079 13.2764H20.6295C20.1417 13.2764 19.8312 13.6245 19.8312 13.9317C19.8312 14.628 20.94 14.7918 21.073 16.7168V20.9354C21.073 21.8569 20.8956 22.0208 20.4965 22.0208C19.4543 22.0208 16.882 18.4575 15.3741 14.3617C15.0637 13.604 14.7754 13.2764 13.9771 13.2764H10.8727C9.98569 13.2764 9.8083 13.6655 9.8083 14.0955C9.8083 14.8532 10.8505 18.6213 14.7089 23.5976C17.2811 26.9971 20.8956 28.8401 24.1775 28.8401C26.151 28.8401 26.3949 28.4306 26.3949 27.7343V25.154C26.3949 24.3348 26.5723 24.171 27.2154 24.171C27.681 24.171 28.4572 24.3758 30.2977 26.0141C32.4042 27.9596 32.759 28.8401 33.9343 28.8401H37.0387C37.9257 28.8401 38.3692 28.4306 38.1031 27.6319C37.8149 26.8332 36.817 25.666 35.4865 24.2734C34.7548 23.4747 33.6682 22.6351 33.3577 22.2051C32.8921 21.6521 33.0251 21.4064 33.3577 20.9354C33.3577 20.9149 37.1496 16 37.5266 14.3208Z" fill="#8391ED"/>
                             </g>
-                            </svg>
-                            
+                            </svg>  
                     </a>
                 </address>
             </div>

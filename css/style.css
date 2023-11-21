@@ -1,33 +1,239 @@
+/* general */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-size: 1.71vw;  
   font-family: sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  list-style: none;
-  text-decoration: none;
   color: #23294F;
+  list-style: none;
+}
+
+* {
+  --marg-22px: 2.12vw;
+  --size-40px: 3.42vw;
+  --size-20px: 1.71vw;
+  --radius: 1.71vw;
+  --pad-35: 2.93vw;
 }
 
 a {
-  font-style: italic;
+  font-style: normal;
+  text-decoration: none;
+  display: inline-block;
+  align-items: inherit;
 }
 
 body {
+  position: relative;
   background-color: #F1F1F1;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  padding: 3.42vw;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header { 
+  display: flex;
+  flex-direction: column;
+}
+
+.header-first-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.71vw;
+}
+
+.header-link {
+  margin-right: 0.9vw;
+}
+
+.header-nav {
+  background-color: #C0C5EC;
+  padding: 1.8vw;
+  border-radius: var(--radius);
+}
+
+.header-link-profile {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: max-content;
+}
+
+.header-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;  
+}
+
+/* main */
+
+.container-heading {
+  font-weight: normal;
+  font-size: 3.42vw;
+  margin: 0 0 1.71vw 3.45vw; 
+}
+
+/* lessons  */
+
+.lection-cards {
+  display: flex;
+  gap: 6%;
+  flex-wrap: wrap ;
+}
+
+.lection-card {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  min-width: 47%;
+  min-height: 455px;
+  border-radius: var(--radius);
+  padding: 3.4vw;
+  padding-bottom: 2.93vw;
+}
+
+.lection-card .medium-heading {
+  color: #061682;
+}
+
+.medium-heading {
+  font-size: 3vw;
+}
+
+.card-heading {
+  font-weight: bolder;
+  font-size: 3.35vw;
+  color: #061682;
+}
+
+.lection-card1 {
+  background: #C0C5EC;
+  background-image: url('../atributes/img/athom.svg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  
+}
+
+.lection-card2 {
+  text-align: end;
+  background: url('../atributes/img/devon-rex-cat\ 1.svg') no-repeat #C6C0EC left bottom;
+}
+
+.show-more-gray {
+  width: max-content;
+  color: #AEAEAE;
+  align-self: flex-end;
+  padding-right: var(--marg-22px);
+  background: url('../atributes/img/gray\ arrow.svg') no-repeat right center;
+  margin: var(--size-20px) var(--size-20px) 0 0;
+}
+
+.show-more-blue {
+  color: #091FB4;
+  background: url('../atributes/img/blue\ arrow.svg') no-repeat right center;
+  padding-right: var(--marg-22px);
+}
+
+/* about project inf */
+
+.about-project-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-project-card:nth-child(1) {
+  width: 66%;
+  background: #D9D9D9;
+  border-radius: var(--radius);
+}
+
+.about-project-card {
+  width: 33%;
+  background: #23294F;
+  border-radius: var(--radius);
+  min-height: 520px;
+  padding: var(--size-40px);
+  padding-bottom: var(--pad-35);
+}
+
+/* dark part */
+
+.advantages {
+  background: #23294F url('../atributes/img/raven-bg.svg') no-repeat right bottom;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.adv-content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 670px;
+  gap: 80px 60px;
+}
+
+.adv-descr-card {
+  display: flex;
+  max-width: 288px;
+  flex-direction: column;
+  gap: var(--marg-22px);
+}
+
+.adv-descr-text, .adv-heading  {
+  color: #f1f1f1;
+}
+
+.adv-heading {
+  font-size: var(--size-40px);
+}
+
+/* events */
+
+.event-cards {
+  display: flex;
+  gap: var(--marg-22px);
+}
+
+.event-card {
+  display: flex;
+  flex-flow: column;
+  min-width: calc(50% - var(--marg-22px));
+  min-height: 455px;
+  border-radius: var(--radius);
+  padding: 3.4vw;
+  padding-bottom: 2.93vw;
+}
+
+.event-card:nth-child(1) {
+  background-color: #D9D9D9;
+}
+
+.event-card:nth-child(2) {
+  background: #C6C0EC url('../atributes/img/settings\ 1.svg') no-repeat right bottom;
+}
+
+.notification {
+  font-size: var(--size-40px);
+  font-weight: 700;
+}
+
+/* footer */
+
 .footer {
-  background-image: url('../atributes/img/Group\ 3028.svg');
+  display: flex;
+  align-items: end; 
+  background-image: url('../atributes/img/Group\ 3028.svg');  
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
 }
-
-.container {
-  max-width: 100%;
-  padding: 1.71vw;
-  margin: 0 3vw;
-}
-
