@@ -3,18 +3,23 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 1.71vw;  
-  font-family: sans-serif;
+  font-size: var(--size-20px);  
+  font-family: 'Montserrat Alternates', sans-serif;
   color: #23294F;
   list-style: none;
 }
 
 * {
-  --marg-22px: 2.12vw;
-  --size-40px: 3.42vw;
-  --size-20px: 1.71vw;
-  --radius: 1.71vw;
-  --pad-35: 2.93vw;
+  --marg-22px: 1.16vw;
+  --size-40px: 2.11vw;
+  --size-20px: 1.05vw;
+  --radius: 1.32vw;
+  --pad-35: 1.84vw;
+  --cards-height: 23.95vw;
+  --cards-width: 29.21vw;
+  --size-36px: 1.89vw;
+  --size-770px: 40.53vw;
+  --size-520px: 27.37vw;
 }
 
 a {
@@ -32,8 +37,8 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  width: 95%;
-  padding: 3.42vw;
+  width: 70vw; 
+  padding: var(--size-40px);
   margin: 0 auto;
 }
 
@@ -49,7 +54,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.71vw;
+  margin-bottom: var(--size-40px);
 }
 
 .header-link {
@@ -58,7 +63,7 @@ body {
 
 .header-nav {
   background-color: #C0C5EC;
-  padding: 1.8vw;
+  padding: var(--marg-22px);
   border-radius: var(--radius);
 }
 
@@ -79,8 +84,8 @@ body {
 
 .container-heading {
   font-weight: normal;
-  font-size: 3.42vw;
-  margin: 0 0 1.71vw 3.45vw; 
+  font-size: var(--size-40px);
+  margin: 0 0 var(--size-20px) var(--size-40px); 
 }
 
 /* lessons  */
@@ -88,19 +93,18 @@ body {
 .lection-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .lection-card {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  min-width: 40vw;
-  min-height: 38.89vw;
-  max-height: 39vw;
+  height: var(--cards-height);
+  width: var(--cards-width);
   border-radius: var(--radius);
-  padding: 3.4vw;
-  padding-bottom: 2.93vw;
+  padding: var(--size-40px);
+  padding-bottom: var(--pad-35);
 }
 
 .lection-card .medium-heading {
@@ -108,12 +112,12 @@ body {
 }
 
 .medium-heading {
-  font-size: 3vw;
+  font-size: var(--size-36px);
 }
 
 .card-heading {
   font-weight: bolder;
-  font-size: 3.35vw;
+  font-size: var(--size-40px);
   color: #061682;
 }
 
@@ -153,41 +157,41 @@ body {
 }
 
 .about-project-card:nth-child(1) {
-  width: 66%;
+  width: var(--size-770px);
   background: #D9D9D9;
   border-radius: var(--radius);
 }
 
 .about-project-card {
-  width: 33%;
+  width: calc(100% - var(--size-770px) - var(--size-20px));
   background: #23294F;
   border-radius: var(--radius);
-  min-height: 44vw;
   padding: var(--size-40px);
   padding-bottom: var(--pad-35);
+  min-height: var(--size-520px);
 }
 
 /* dark part */
 
 .advantages {
   background: #23294F url('../atributes/img/raven-bg.svg') no-repeat right bottom;
-  min-height: 100vh;
+  background-size: 70vw 36vw;
+  height: 100vh;
   display: flex;
   align-items: center;
-
 }
 
 .adv-content {
   display: flex;
   flex-wrap: wrap;
-  width: 52.56vw;
-  gap: var(--size-40px);
+  max-width: 32.37vw;
+  justify-content: space-between;
+  row-gap: 3vw;
 }
 
 .adv-descr-card {
+  width: 15.26vw;
   display: flex;
-  width: 22.5vw;
-  flex-shrink: 0;
   flex-direction: column;
   gap: var(--marg-22px);
 }
@@ -238,5 +242,5 @@ body {
   background-image: url('../atributes/img/Group\ 3028.svg');  
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 80vh;
 }
