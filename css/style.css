@@ -14,13 +14,14 @@
   --size-40px: 2.11vw;
   --size-20px: 1.05vw;
   --radius: 1.32vw;
-  --pad-35: 1.84vw;
+  --pad-35: 1.84vw;               /* все единицы отсчитываются для экрана с разрешением 1900px */
   --cards-height: 23.95vw;
   --cards-width: 29.21vw;
   --size-36px: 1.89vw;
   --size-770px: 40.53vw;
-  --size-520px: 27.37vw;
+  --size-520px: 27.37vw;          
 }
+
 
 a {
   font-style: normal;
@@ -74,11 +75,26 @@ body {
   width: max-content;
 }
 
+a.header-logo {
+  width: max-content;
+}
+
+.header-logo-img {
+  width: 9vw;
+  height: 4em;
+}
+
+.profile-icon {
+  width: 4em;
+  height: 4em;
+}
+
 .header-list {
   display: flex;
   flex-direction: row;
   justify-content: space-around;  
 }
+
 
 /* main */
 
@@ -126,12 +142,13 @@ body {
   background-image: url('../atributes/img/athom.svg');
   background-repeat: no-repeat;
   background-position: right bottom;
-  
+  background-size: 19vw;
 }
 
 .lection-card2 {
   text-align: end;
   background: url('../atributes/img/devon-rex-cat\ 1.svg') no-repeat #C6C0EC left bottom;
+  background-size: 19vw;
 }
 
 .show-more-gray {
@@ -140,13 +157,15 @@ body {
   align-self: flex-end;
   padding-right: var(--marg-22px);
   background: url('../atributes/img/gray\ arrow.svg') no-repeat right center;
-  margin: var(--size-20px) var(--size-20px) 0 0;
+  margin: var(--size-20px) var(--size-40px) 0 0;
+  background-size: 1em;
 }
 
 .show-more-blue {
   color: #091FB4;
   background: url('../atributes/img/blue\ arrow.svg') no-repeat right center;
   padding-right: var(--marg-22px);
+  background-size: 1em;
 }
 
 /* about project inf */
@@ -214,11 +233,10 @@ body {
 .event-card {
   display: flex;
   flex-flow: column;
-  width: 48.72vw;
-  height: 38.89vw;
+  width: var(--cards-width);
+  height: var(--cards-height);
   border-radius: var(--radius);
   padding: var(--size-40px);
-  padding-bottom: 2.93vw;
 }
 
 .event-card:nth-child(1) {
@@ -227,11 +245,11 @@ body {
 
 .event-card:nth-child(2) {
   background: #C6C0EC url('../atributes/img/settings\ 1.svg') no-repeat right bottom;
+  background-size: 35vw;
 }
 
 .notification {
   font-size: var(--size-40px);
-  font-weight: 700;
 }
 
 /* footer */
@@ -244,3 +262,4 @@ body {
   background-size: cover;
   min-height: 80vh;
 }
+
