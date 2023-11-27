@@ -53,7 +53,7 @@ body {
 .header-first-row {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   margin-bottom: var(--size-40px);
 }
@@ -77,6 +77,7 @@ body {
 
 a.header-logo {
   width: max-content;
+  margin-right: auto;
 }
 
 .header-logo-img {

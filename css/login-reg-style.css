@@ -1,0 +1,123 @@
+/* general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: var(--size-20px);  
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #23294F;
+    list-style: none;
+  }
+  
+  * {
+    --marg-22px: 1.16vw;
+    --size-40px: 2.11vw;
+    --size-20px: 1.05vw;
+    --radius: 1.32vw;
+    --pad-35: 1.84vw;               /* все единицы отсчитываются для экрана с разрешением 1900px */
+    --cards-height: 23.95vw;
+    --cards-width: 29.21vw;
+    --size-36px: 1.89vw;
+    --size-770px: 40.53vw;
+    --size-520px: 27.37vw;          
+  }
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+body {
+    height: 100vh;
+}
+
+/* header */
+
+.logo {
+    height: 7em;
+}
+
+.header {
+    padding: var(--pad-35) 0;
+}
+
+header .container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.gr_text {
+    color: #AEAEAE;
+    display: inline-block;
+}
+ 
+.back-link {
+    margin-right: auto;
+    background: url('../atributes/img/gray\ arrow\ left.svg') no-repeat center left;
+    background-size: 1em;
+    padding-left: var(--marg-22px);
+}
+
+.registr-btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #23294F;
+    border-radius: var(--radius);
+    padding: 0.8em 1em;
+}
+
+.dark-btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #23294F;
+    border-radius: var(--radius);
+    padding: 0.8em 1em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.login-btn {
+    width: 17em;
+    text-align: center;
+}   
+
+/* inputs */
+
+
+main .container {
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    row-gap: var(--marg-22px);
+}
+
+.inputs-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+}
+
+.default-textarea {
+    border-radius: var(--radius);
+    border: none;
+    background-color: #C0C5EC;
+    padding: 0.8em 1em;
+    color: #23294F;
+    width: 17em;
+}
+
+form#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: var(--marg-22px);
+}
