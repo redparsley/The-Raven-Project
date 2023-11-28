@@ -264,3 +264,16 @@ a.header-logo {
   min-height: 80vh;
 }
 
+.footer-contacts, .footer-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+
+.footer-block:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.footer-descr {
+  font-weight: 700;
+}

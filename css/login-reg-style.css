@@ -106,13 +106,18 @@ main .container {
     row-gap: 0.5em;
 }
 
-.default-textarea {
+.default-input {
     border-radius: var(--radius);
     border: none;
     background-color: #C0C5EC;
     padding: 0.8em 1em;
     color: #23294F;
     width: 17em;
+    text-align: center;
+}
+
+.default-input::placeholder {
+    color: #5560AB;
 }
 
 form#login {
