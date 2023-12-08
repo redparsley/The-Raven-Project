@@ -1,0 +1,43 @@
+
+:root {
+  --marg-22px: 1.16vw;
+  --size-40px: 2.11vw;
+  --size-20px: 1.05vw;
+  --radius: 1.32vw;
+  --pad-35: 1.84vw;               /* все единицы отсчитываются для экрана с разрешением width = 1900px */
+  --cards-height: 23.95vw;
+  --cards-width: 29.21vw;
+  --size-36px: 1.89vw;
+  --size-770px: 40.53vw;
+  --size-520px: 27.37vw;          
+}
+
+/* ================================== GENERAl SETTINGS ================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: var(--size-20px);  
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #23294F;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.container {
+  margin: 0 auto;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  padding: var(--size-40px) 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #f1f1f1;
+}
