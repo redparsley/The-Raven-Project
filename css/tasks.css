@@ -1,0 +1,72 @@
+
+:root {
+    --marg-22px: 1.16vw;
+    --size-40px: 2.11vw;
+    --size-20px: 1.05vw;
+    --radius: 1.32vw;
+    --pad-35: 1.84vw;               /* все единицы отсчитываются для экрана с разрешением width = 1900px */
+    --cards-height: 23.95vw;
+    --cards-width: 29.21vw;
+    --size-36px: 1.89vw;
+    --size-770px: 40.53vw;
+    --size-520px: 27.37vw;          
+  }
+
+/* ===================================== HEADER ========================================== */
+
+.header .container {
+ display: flex;
+ flex-flow: row nowrap;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.header-link {
+    margin-right: 0.9vw;
+  }
+
+.header-link-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: max-content;
+}
+
+.profile-icon {
+    width: 4em;
+    height: 4em;
+}
+
+/* ===================================================== TASKS GRID ================================================================= */
+
+.lection-tasks-list {
+    display: flex;
+}
+
+.lection-task {
+    display: flex;
+}
+
+
+
+
+
+/* ===================================================== DROPDOWN SETTINGS =========================================================== */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: calc(100% + var(--size-20px));
+    transition: opacity 0.1s ease-in-out;
+}
+
+.dropdown > .dropdown-btn:focus + .dropdown-menu {
+    opacity: 1;
+}
+

@@ -41,3 +41,53 @@ body {
   height: 100vh;
   background-color: #f1f1f1;
 }
+
+.back-link {
+  margin-right: auto;
+  background: url('../atributes/img/gray\ arrow\ left.svg') no-repeat center left;
+  background-size: 1em;
+  padding-left: var(--marg-22px);
+  color: #AEAEAE;
+}
+
+
+/*============================================================ footer default ===================================================================*/
+
+.footer {
+  display: flex;
+  align-items: end;
+  background-image: url('../atributes/img/Group\ 3028.svg');  
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-contacts, .footer-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+
+.footer-block:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.footer-link-media {
+  display: inline-block;
+  width: max-content;
+}
+
+.footer-descr {
+  font-weight: 700;
+}
+
+.social-ntw {
+  display: flex;
+  justify-content: space-between;
+}
