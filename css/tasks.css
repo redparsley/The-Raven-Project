@@ -1,0 +1,156 @@
+
+:root {
+    --marg-22px: 1.16vw;
+    --size-40px: 2.11vw;
+    --size-20px: 1.05vw;
+    --radius: 1.32vw;
+    --pad-35: 1.84vw;               /* все единицы отсчитываются для экрана с разрешением width = 1900px */
+    --cards-height: 23.95vw;
+    --cards-width: 29.21vw;
+    --size-36px: 1.89vw;
+    --size-770px: 40.53vw;
+    --size-520px: 27.37vw;          
+  }
+
+/* ===================================== HEADER ========================================== */
+
+.header .container {
+ display: flex;
+ flex-flow: row nowrap;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.header-link {
+    margin-right: 0.9vw;
+  }
+
+.header-link-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: max-content;
+}
+
+.profile-icon {
+    width: 4em;
+    height: 4em;
+}
+
+/* ===================================================== DROPDOWN SETTINGS =========================================================== */
+
+.page-name {
+    font-size: var(--size-40px);
+    font-weight: normal;
+    margin-bottom: var(--size-40px);
+    margin-left: var(--marg-22px);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: grid;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: calc(100% + var(--size-20px));
+    transition: opacity 0.1s ease-in-out;
+}
+
+.dropdown > .dropdown-btn:focus + .dropdown-content {
+    opacity: 1;
+}
+
+
+.dropdowns-form {
+    display: flex;
+    justify-content: space-around;
+    height: 3.42vw;
+}
+
+
+.dropdown-btn {
+    width: 13vw;
+    height: 100%;
+    border: none;
+    background-color: #d9d9d9;
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+
+.btn-post {
+    color: #fff;
+    background-color: #23294F;
+    cursor: pointer;
+}
+
+button, a.task-page-link {
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-post:hover, .task-page-link:hover {
+    background-color: #091FB4;
+}
+
+.btn-post:hover, .task-page-link:active {
+    background-color: #00107B;
+}
+
+
+
+/* ===================================================== TASKS GRID ================================================================= */
+
+.task-card {
+    display: flex;
+    height: 12.84vw;
+    width: 100%;
+    justify-content: space-between;
+  
+}
+
+.task-card:not(:last-child) {
+    margin-bottom: var(--size-40px);
+}
+
+.task-card-content {
+    position: relative;
+    width: 37.58vw;
+    min-height: 100%;
+    background: linear-gradient(0.96turn, #C6C0EC, #D9D9D900 45%);
+    border-radius: var(--radius);
+}
+
+.theme-name {
+    font-size: var(--size-36px);
+}
+
+
+.task-descr {
+    color: #AEAEAE;
+    display: inline-block;  
+}
+
+.num_of_tasks {
+    display: inline-block;
+    font-weight: bold;
+    color: #091FB4;
+}
+
+.task-page-link {
+    margin: var(--pad-35);
+    padding: 0.5em var(--marg-22px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #23294F;
+    border-radius: var(--radius);
+    color: #fff;    
+}
+
+.cours-preview {
+    width: 22.84vw;
+}
+

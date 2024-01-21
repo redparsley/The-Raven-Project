@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - Raven</title>
+
+    <link rel="stylesheet" href="../css/login-reg-style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/root.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+        <a class="back-link gr_text" href="./login.html">
+            назад
+        </a>
+    </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <img src="../atributes/img/login logo.svg" alt="логотип рейвен" class="logo">
+            <form action="" method="post" id="login">
+            <div class="inputs-block">
+                <input type="text" class="default-input" placeholder="Имя" required>
+                <input type="text" class="default-input" placeholder="Фамилия" required>
+                <input type="text" class="default-input" placeholder="Придумайте никнейм" required maxlength="15">
+                <input type="password" class="default-input" placeholder="Придумайте пароль" required maxlength="15" minlength="5">
+                <input type="email" class="default-input" placeholder="Электронная почта" required>
+            </div>
+
+            <button type="submit" class="login-btn dark-btn">
+                Зарегистрироваться
+            </button>
+        </form>
+        </div>
+    </main>
+</body>
+</html>

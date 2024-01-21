@@ -1,0 +1,115 @@
+
+:root {
+    --marg-22px: 1.16vw;
+    --size-40px: 2.11vw;
+    --size-20px: 1.05vw;
+    --radius: 1.32vw;
+    --pad-35: 1.84vw;               /* все единицы отсчитываются для экрана с разрешением width = 1900px */
+    --cards-height: 23.95vw;
+    --cards-width: 29.21vw;
+    --size-36px: 1.89vw;
+    --size-770px: 40.53vw;
+    --size-520px: 27.37vw;          
+  }
+
+/* ===================================== HEADER ========================================== */
+
+
+.header-row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.header-logo {
+    width: 9vw;
+    height: 4em;
+}
+
+.logo-link {
+    margin-right: 0.9vw;
+}
+
+.profile-icon {
+    width: 4em;
+    height: 4em;
+}
+
+/* =========================================================================== MAIN ====================================================================== */ 
+
+
+
+
+
+
+
+
+
+/* ======================================== PHYS CARDS =========================================================================== */
+
+.section-name {
+    font-size: var(--size-36px);
+    margin-bottom: 0.7em;
+}
+
+.courses-block {
+    display: flex;
+}   
+
+.courses-text {
+    width: 50%;
+}
+
+.lection-cards {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: var(--size-40px);
+}
+
+.lection-card {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: var(--cards-height);
+    width: var(--cards-width);
+    border-radius: var(--radius);
+    padding: var(--size-40px);
+    padding-bottom: var(--pad-35);
+}
+
+.lection-card .medium-heading {
+    color: #061682;
+}
+
+.medium-heading {
+    font-size: var(--size-36px);
+}
+
+.card-heading {
+    font-weight: bolder;
+    font-size: var(--size-40px);
+    color: #061682;
+}
+
+.lection-card1 {
+    background: #C0C5EC;
+    background-image: url('../atributes/img/athom.svg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 19vw;
+}
+    
+.lection-card2 {
+    text-align: end;
+    background: url('../atributes/img/devon-rex-cat\ 1.svg') no-repeat #C6C0EC left bottom;
+    background-size: 19vw;
+}
+
+.show-more-blue {
+    color: #091FB4;
+    background: url('../atributes/img/blue\ arrow.svg') no-repeat right center;
+    padding-right: var(--marg-22px);
+    background-size: 1em;
+}

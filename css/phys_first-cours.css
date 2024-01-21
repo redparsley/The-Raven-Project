@@ -1,0 +1,89 @@
+
+:root {
+    --marg-22px: 1.16vw;
+    --size-40px: 2.11vw;
+    --size-20px: 1.05vw;
+    --radius: 1.32vw;
+    --pad-35: 1.84vw;               /* все единицы отсчитываются для экрана с разрешением width = 1900px */
+    --cards-height: 23.95vw;
+    --cards-width: 29.21vw;
+    --size-36px: 1.89vw;
+    --size-770px: 40.53vw;
+    --size-520px: 27.37vw;          
+  }
+
+/* ===================================== HEADER ========================================== */
+
+
+.header-row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.header-logo {
+    width: 9vw;
+    height: 4em;
+}
+
+.logo-link {
+    margin-right: 0.9vw;
+}
+
+.profile-icon {
+    width: 4em;
+    height: 4em;
+}
+
+/* =========================================================================== MAIN ====================================================================== */
+
+.page-heading {
+    font-size: var(--size-40px);
+    font-style: normal;
+    font-weight: normal;
+}
+
+.block-heading {
+    font-size: var(--size-36px);
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--size-40px);
+}
+
+.block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.hide-btn {
+    background-color: transparent;
+    padding-left: 1.2em;
+    border: none;
+    width: max-content;
+    cursor: pointer;
+    background-image: url('../atributes/gray-arrow-up.svg');
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: center left;
+    color: #AEAEAE;
+}
+
+
+.video-list {
+    display: flex;
+    gap: var(--size-40px);
+}
+
+.lesson-preview {
+    margin-bottom: .5em;
+}
+
+.lesson-heading {
+    font-size: var(--size-20px);
+    font-style: normal;
+    font-weight: normal;
+}

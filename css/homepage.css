@@ -1,0 +1,118 @@
+
+:root {
+  --marg-22px: 1.16vw;
+  --size-40px: 2.11vw;
+  --size-20px: 1.05vw;
+  --radius: 1.32vw;
+  --pad-35: 1.84vw;               /* все единицы отсчитываются для экрана с разрешением width = 1900px */
+  --cards-height: 23.95vw;
+  --cards-width: 29.21vw;
+  --size-36px: 1.89vw;
+  --size-770px: 40.53vw;
+  --size-520px: 27.37vw;          
+}
+
+/* =============================================================== HEADER =================================================================  */
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-link {
+  display: inline;
+  margin: 0;
+}
+
+.leave {
+  color: #23294F;
+  background-image: url('../atributes/img/arrow-dark-left.svg');
+}
+
+/* ============================== PROFILE ================================================ */
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.prof-cont {
+  height: 70vh;
+}
+
+.profile-part-img {
+  margin-right: var(--size-40px);
+  width: 18.42vw;
+  height: 22.11vw;
+}
+
+.user-avatar {
+  border-radius: var(--radius);
+  width: 18.42vw;
+  height: 22.11vw;
+}
+
+.user-name {
+  margin-bottom: var(--pad-35);
+}
+
+.user-nickname {
+  font-size: var(--size-40px);
+  font-weight: normal;
+}
+
+.profile-part-properties {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-column {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--marg-22px);
+}
+
+.info-placeholder {
+  color: #5560AB;
+}
+
+.user-info {
+  font-size: 1.68vw;
+}
+
+.column-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 29.21vw;
+  min-height: 4.32vw;
+  border-radius: var(--radius);
+  background-color: #C0C5EC;
+  padding: 0.42vw var(--marg-22px);
+}
+
+.change-link {
+  background-color: #23294F;
+  color: #F1F1F1;
+  align-items: center;
+}
+
+/* ======================================================= CONTINUE =========================================================================== */
+
+.continue-heading {
+  font-weight: normal; 
+  font-size: var(--size-40px);
+  margin-bottom: var(--size-40px);
+}
+
+.lessons-previews {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lesson-link   {
+  width: 22.84vw;
+  height: 12.84vw;
+  background: #D9D9D9;
+  border-radius: var(--radius);
+}
