@@ -2,11 +2,11 @@
 <html="ru">
 <head>
     <meta charset="UTF-8">
- <meta name="port" content="=device-width initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Личный кабинет Raven</title>
 </head>
 <body>
-    <main class="main">
+    <main id="main" class="main">
         <div class="container">
             <?php
             // Get the user ID from the cookie
@@ -50,6 +50,18 @@
             }
             ?>
         </div>
+        <button id="logoutButton">Выйти из аккаунта</button>
     </main>
+    <script>
+        document.getElementById('logoutButton').addEventListener('click', function() {
+            // Delete the user_id cookie
+            if (document.cookie.includes('user_id=')) {
+                document.cookie = 'user_id=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/';
+            }
+
+            // Optionally, you can redirect the user to the login page after logout
+            window.location.href = 'login.html';
+        });
+    </script>
 </body>
 </html>
